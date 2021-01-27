@@ -8,13 +8,13 @@ with open("test.jpg", "rb") as img_file:
 
 # This is the Publisher
 client = mqtt.Client()
-client.connect("140.114.91.173",1883,60)
+client.connect("10.121.190.108",1883,60)
 #client.publish("topic/test", "Hello world!");
 #f=open("/home/yicheng/python/test/test.txt")
 byteArray = bytes(my_string)
 client.publish("topic/test", byteArray ,0)
 print(byteArray)
-client.disconnect();
+client.disconnect()
 
 
 

@@ -24,7 +24,7 @@ def on_message(client, obj, msg):
 
 
 client = mqtt.Client()
-client.connect("140.114.91.173",1883,60)
+client.connect("10.121.190.108",1883,60)
 client.on_connect = on_connect
 #///////////////////////////////////////////////////
 client.on_message = on_message
