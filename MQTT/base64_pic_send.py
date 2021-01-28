@@ -12,7 +12,7 @@ client.connect("10.121.190.108",1883,60)
 #client.publish("topic/test", "Hello world!");
 #f=open("/home/yicheng/python/test/test.txt")
 byteArray = bytes(my_string)
-client.publish("topic/image", byteArray ,0)
+client.publish("topic/seal", byteArray ,0)
 print(byteArray)
 client.disconnect()
 
